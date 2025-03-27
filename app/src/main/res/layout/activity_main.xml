@@ -3,4 +3,59 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"/>
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <EditText
+        android:id="@+id/commandEditTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Command to Execute "
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.402"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <ImageView
+        android:id="@+id/micImageViewId"
+        android:layout_width="57dp"
+        android:layout_height="46dp"
+        android:background="#C8C520"
+        android:src="@drawable/microphone_svg"
+        app:layout_constraintBottom_toTopOf="@+id/showResponseTextViewId"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/executeButtonId"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.223" />
+
+    <Button
+        android:id="@+id/executeButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:text="Execute"
+        app:layout_constraintBottom_toTopOf="@+id/showResponseTextViewId"
+        app:layout_constraintEnd_toStartOf="@+id/micImageViewId"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/commandEditTextViewId"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <TextView
+        android:id="@+id/showResponseTextViewId"
+        android:layout_width="402dp"
+        android:layout_height="496dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonId"
+        app:layout_constraintVertical_bias="0.986" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
