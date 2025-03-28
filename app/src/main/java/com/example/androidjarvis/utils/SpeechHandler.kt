@@ -101,4 +101,6 @@ class SpeechHandler(private val context: Context) : TextToSpeech.OnInitListener 
         speechRecognizer?.destroy()
         speechRecognizer = null
     }
+
+    companion object
 }
